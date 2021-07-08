@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_orange"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/first_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"
+            tools:text="6" />
+
+        <TextView
+            android:id="@+id/multiply_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/first_number"
+            android:layout_marginRight="15dp"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:text="x" />
+
+        <TextView
+            android:id="@+id/second_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/multiply_sign"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/equal_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/second_number"
+            android:layout_marginRight="15dp"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:text="=" />
+
+        <EditText
+
+            android:layout_marginTop="-12dp"
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            android:layout_toRightOf="@id/equal_sign"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/check_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:layout_below="@id/answer"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:id="@+id/your_score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:text="Score: "
+            android:textSize="40dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_toRightOf="@id/your_score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            tools:text="7"
+            android:textSize="40dp"
+            android:textColor="#065309"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:text="/10"
+            android:layout_toRightOf="@id/result"
+            android:textSize="40dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</RelativeLayout>
